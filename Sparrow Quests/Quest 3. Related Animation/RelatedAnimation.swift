@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+fileprivate class RelatedAnimationViewController: UIViewController {
 
     let squareView = UIView()
     let slider = UISlider()

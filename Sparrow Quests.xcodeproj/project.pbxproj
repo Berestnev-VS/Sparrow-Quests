@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		E714439F2A0A3651002F6182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E714439E2A0A3651002F6182 /* AppDelegate.swift */; };
 		E71443A12A0A3651002F6182 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71443A02A0A3651002F6182 /* SceneDelegate.swift */; };
-		E71443A32A0A3651002F6182 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71443A22A0A3651002F6182 /* ViewController.swift */; };
+		E71443A32A0A3651002F6182 /* RelatedAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71443A22A0A3651002F6182 /* RelatedAnimation.swift */; };
 		E71443A62A0A3651002F6182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71443A42A0A3651002F6182 /* Main.storyboard */; };
 		E71443A82A0A3652002F6182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71443A72A0A3652002F6182 /* Assets.xcassets */; };
 		E71443AB2A0A3652002F6182 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71443A92A0A3652002F6182 /* LaunchScreen.storyboard */; };
+		E71443B42A0BACDA002F6182 /* ThreeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71443B32A0BACDA002F6182 /* ThreeButtons.swift */; };
+		E71443B82A0BE35B002F6182 /* GradientAndShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71443B72A0BE35B002F6182 /* GradientAndShadow.swift */; };
+		E71443BA2A0BE3FE002F6182 /* Mixertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71443B92A0BE3FE002F6182 /* Mixertable.swift */; };
+		E7B4A2222A114C66008653D0 /* CompactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4A2212A114C66008653D0 /* CompactViewController.swift */; };
+		E7B4A2472A125F54008653D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4A2462A125F54008653D0 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E714439B2A0A3651002F6182 /* Sparrow Quests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sparrow Quests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E714439E2A0A3651002F6182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E71443A02A0A3651002F6182 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E71443A22A0A3651002F6182 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E71443A22A0A3651002F6182 /* RelatedAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedAnimation.swift; sourceTree = "<group>"; };
 		E71443A52A0A3651002F6182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E71443A72A0A3652002F6182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E71443AA2A0A3652002F6182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E71443AC2A0A3652002F6182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E71443B32A0BACDA002F6182 /* ThreeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeButtons.swift; sourceTree = "<group>"; };
+		E71443B72A0BE35B002F6182 /* GradientAndShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientAndShadow.swift; sourceTree = "<group>"; };
+		E71443B92A0BE3FE002F6182 /* Mixertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mixertable.swift; sourceTree = "<group>"; };
+		E7B4A2212A114C66008653D0 /* CompactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactViewController.swift; sourceTree = "<group>"; };
+		E7B4A2462A125F54008653D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +66,12 @@
 		E714439D2A0A3651002F6182 /* Sparrow Quests */ = {
 			isa = PBXGroup;
 			children = (
-				E71443B22A0A4CF7002F6182 /* Quest 3 */,
+				E71443B62A0BE351002F6182 /* Quest 1. Gradient And Shadow */,
+				E71443B52A0BACFA002F6182 /* Quest 2. Three Buttons */,
+				E71443B22A0A4CF7002F6182 /* Quest 3. Related Animation */,
+				E7B4A2202A114BAB008653D0 /* Quest 4. Mixer Table */,
+				E7B4A2452A125F09008653D0 /* Quest 5. Compact Controller */,
+				E7B4A2462A125F54008653D0 /* ViewController.swift */,
 				E714439E2A0A3651002F6182 /* AppDelegate.swift */,
 				E71443A02A0A3651002F6182 /* SceneDelegate.swift */,
 				E71443A42A0A3651002F6182 /* Main.storyboard */,
@@ -67,12 +82,44 @@
 			path = "Sparrow Quests";
 			sourceTree = "<group>";
 		};
-		E71443B22A0A4CF7002F6182 /* Quest 3 */ = {
+		E71443B22A0A4CF7002F6182 /* Quest 3. Related Animation */ = {
 			isa = PBXGroup;
 			children = (
-				E71443A22A0A3651002F6182 /* ViewController.swift */,
+				E71443A22A0A3651002F6182 /* RelatedAnimation.swift */,
 			);
-			path = "Quest 3";
+			path = "Quest 3. Related Animation";
+			sourceTree = "<group>";
+		};
+		E71443B52A0BACFA002F6182 /* Quest 2. Three Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				E71443B32A0BACDA002F6182 /* ThreeButtons.swift */,
+			);
+			path = "Quest 2. Three Buttons";
+			sourceTree = "<group>";
+		};
+		E71443B62A0BE351002F6182 /* Quest 1. Gradient And Shadow */ = {
+			isa = PBXGroup;
+			children = (
+				E71443B72A0BE35B002F6182 /* GradientAndShadow.swift */,
+			);
+			path = "Quest 1. Gradient And Shadow";
+			sourceTree = "<group>";
+		};
+		E7B4A2202A114BAB008653D0 /* Quest 4. Mixer Table */ = {
+			isa = PBXGroup;
+			children = (
+				E71443B92A0BE3FE002F6182 /* Mixertable.swift */,
+			);
+			path = "Quest 4. Mixer Table";
+			sourceTree = "<group>";
+		};
+		E7B4A2452A125F09008653D0 /* Quest 5. Compact Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7B4A2212A114C66008653D0 /* CompactViewController.swift */,
+			);
+			path = "Quest 5. Compact Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E71443A32A0A3651002F6182 /* ViewController.swift in Sources */,
+				E71443BA2A0BE3FE002F6182 /* Mixertable.swift in Sources */,
+				E71443B82A0BE35B002F6182 /* GradientAndShadow.swift in Sources */,
+				E71443A32A0A3651002F6182 /* RelatedAnimation.swift in Sources */,
+				E71443B42A0BACDA002F6182 /* ThreeButtons.swift in Sources */,
+				E7B4A2222A114C66008653D0 /* CompactViewController.swift in Sources */,
 				E714439F2A0A3651002F6182 /* AppDelegate.swift in Sources */,
+				E7B4A2472A125F54008653D0 /* ViewController.swift in Sources */,
 				E71443A12A0A3651002F6182 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
