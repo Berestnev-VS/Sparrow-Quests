@@ -7,7 +7,7 @@
 
 import UIKit
 
-fileprivate class SecondQuestButton: UIButton {
+class SecondQuestButton: UIButton {
 
     init(title: String) {
         super.init(frame: .zero)
@@ -54,7 +54,7 @@ fileprivate class ThreeButtonsViewController: UIViewController {
     lazy var buttons = buttonTitles.map { title in
         let button = SecondQuestButton(title: title)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.sizeToFit() // Чтобы размер зависел от контента. Работает и без него  
+        button.sizeToFit()
         button.setImage(UIImage(systemName: "bird.fill"), for: .normal) 
         button.setImage(UIImage(systemName: "bird.fill"), for: .highlighted)
         

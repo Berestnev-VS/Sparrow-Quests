@@ -80,7 +80,6 @@ fileprivate class PopoverContentController: UIViewController {
         segmentedControl.addTarget(self, action: #selector(changeHeight), for: .valueChanged)
     }
     
-    // Я понимал, что можно реализовать проще, но реализовал так на случай, если бы у сегментенд контрола было много значений
     @objc func changeHeight(sender: UISegmentedControl) { 
         guard let floatValue = Float(sender.titleForSegment(at: sender.selectedSegmentIndex) ?? "") else { return }
         let height: CGFloat = CGFloat(floatValue)

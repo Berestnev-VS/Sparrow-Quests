@@ -7,7 +7,7 @@
 
 import UIKit
 
-fileprivate class GradientAndShadowViewController: UIViewController {
+class GradientAndShadowViewController: UIViewController {
 
     private let gradientView: UIView = {
         let view = UIView()

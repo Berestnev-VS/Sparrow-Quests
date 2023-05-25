@@ -5,16 +5,9 @@
 //  Created by Владимир on 10.05.2023.
 //
 
-/*
- - [ ]  На весь экран таблица, в таблице *минимум 30 ячеек*.
- - [ ]  По нажатию на ячейку она анимированно перемещается на первое место, а справа появляется галочка.
- - [ ]  Если нажать на ячейку с галочкой, то галочка пропадает.
- - [ ]  Справа вверху кнопка анимированно перемешивает ячейки.
- */
-
 import UIKit
 
-fileprivate class MixertableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MixertableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var tableView: UITableView!
     var data: [(Int, Bool)] = []
@@ -62,9 +55,7 @@ fileprivate class MixertableViewController: UIViewController, UITableViewDelegat
         item.1.toggle()
         data[indexPath.row] = item
 
-        // Проверяем, перемещать ли ячейку
         if item.1 {
-            // Анимация перемещения
             data.remove(at: indexPath.row)
             data.insert(item, at: 0)
             
