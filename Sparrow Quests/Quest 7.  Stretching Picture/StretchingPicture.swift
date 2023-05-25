@@ -7,87 +7,43 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIScrollViewDelegate {
+class StretchingPictureViewController: UIViewController, UIScrollViewDelegate {
     
     var imageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = .red
         imageView.contentMode = .scaleAspectFill
         imageView.image = UIImage(named: "falcon")
-        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.layer.masksToBounds = true
         return imageView
     }()
     
-    let contentView: UIView = {
-        let contentView = UIView()
-        contentView.backgroundColor = .white
-        contentView.translatesAutoresizingMaskIntoConstraints = false
-        return contentView
-    }()
+    var scrollView: UIScrollView = UIScrollView()
     
-    var scrollView: UIScrollView = {
-        let scrollView = UIScrollView()
-        scrollView.contentInsetAdjustmentBehavior = .never
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        return scrollView
-    }()
-    
-    let initialImageViewHeight: CGFloat = 270.0
-    
-    var scrollViewTopConstraint: NSLayoutConstraint!
-    var imageViewTopConstraint: NSLayoutConstraint!
-    var imageViewHeightConstraint: NSLayoutConstraint!
+    let imageViewHeight: CGFloat = 270.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        setupConstraints()
+        view.addSubview(scrollView)
+        scrollView.addSubview(imageView)
         scrollView.delegate = self
         
     }
     
-    func setupConstraints() {
-        view.addSubview(imageView)
-        view.addSubview(scrollView)
-        scrollView.addSubview(contentView)
-        
-        NSLayoutConstraint.activate([
-            imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            
-            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            
-            contentView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: initialImageViewHeight),
-            contentView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            contentView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-            contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-            contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-            contentView.heightAnchor.constraint(equalToConstant: 1000) 
-        ])
-        
-        imageViewHeightConstraint = imageView.heightAnchor.constraint(equalToConstant: initialImageViewHeight)
-        imageViewTopConstraint = imageView.topAnchor.constraint(equalTo: view.topAnchor)
-        scrollViewTopConstraint = scrollView.topAnchor.constraint(equalTo: view.topAnchor, constant: imageViewHeightConstraint.constant)
-        
-        imageViewTopConstraint.isActive = true
-        imageViewHeightConstraint.isActive = true
-        scrollViewTopConstraint.isActive = true
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        scrollView.contentSize = CGSize(width: view.frame.width, height: 2000)
+        scrollView.frame = view.bounds
+        imageView.frame = CGRect(x: .zero, y: -scrollView.safeAreaInsets.top, width: scrollView.frame.width, height: imageViewHeight)
     }
     
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let y = scrollView.contentOffset.y
-        let newImageViewHeight = initialImageViewHeight - y
-        if newImageViewHeight > initialImageViewHeight {
-            imageViewHeightConstraint.constant = newImageViewHeight
-            imageViewTopConstraint.constant = 0
-            scrollView.scrollIndicatorInsets = UIEdgeInsets(top: -y, left: 0, bottom: 0, right: 0)
-        } else if newImageViewHeight < initialImageViewHeight {
-            imageViewTopConstraint.constant = -y
-            imageViewHeightConstraint.constant = initialImageViewHeight
+        let y = scrollView.contentOffset.y + scrollView.safeAreaInsets.top
+        if y < 0 {
+            imageView.frame = .init(x: .zero, y: -scrollView.safeAreaInsets.top - abs(y), width: scrollView.frame.width, height: imageViewHeight + abs(y))
         }
+        scrollView.verticalScrollIndicatorInsets.top = imageView.frame.height - view.safeAreaInsets.top
     }
     
 }
-

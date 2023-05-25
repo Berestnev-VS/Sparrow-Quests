@@ -16,6 +16,8 @@
 		E71443B42A0BACDA002F6182 /* ThreeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71443B32A0BACDA002F6182 /* ThreeButtons.swift */; };
 		E71443B82A0BE35B002F6182 /* GradientAndShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71443B72A0BE35B002F6182 /* GradientAndShadow.swift */; };
 		E71443BA2A0BE3FE002F6182 /* Mixertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71443B92A0BE3FE002F6182 /* Mixertable.swift */; };
+		E7258B1C2A1F9E220019B29D /* App Store Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7258B1B2A1F9E220019B29D /* App Store Collection.swift */; };
+		E7258B1F2A1F9E900019B29D /* Native Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7258B1E2A1F9E900019B29D /* Native Avatar.swift */; };
 		E7B4A2222A114C66008653D0 /* CompactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4A2212A114C66008653D0 /* CompactController.swift */; };
 		E7BC1C002A1A38200044A021 /* StretchingPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BC1BFF2A1A38200044A021 /* StretchingPicture.swift */; };
 		E7F116D42A14C0E400744662 /* Inertial Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F116D32A14C0E400744662 /* Inertial Square.swift */; };
@@ -33,6 +35,8 @@
 		E71443B32A0BACDA002F6182 /* ThreeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeButtons.swift; sourceTree = "<group>"; };
 		E71443B72A0BE35B002F6182 /* GradientAndShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientAndShadow.swift; sourceTree = "<group>"; };
 		E71443B92A0BE3FE002F6182 /* Mixertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mixertable.swift; sourceTree = "<group>"; };
+		E7258B1B2A1F9E220019B29D /* App Store Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Store Collection.swift"; sourceTree = "<group>"; };
+		E7258B1E2A1F9E900019B29D /* Native Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Native Avatar.swift"; sourceTree = "<group>"; };
 		E7B4A2212A114C66008653D0 /* CompactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactController.swift; sourceTree = "<group>"; };
 		E7BC1BFF2A1A38200044A021 /* StretchingPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchingPicture.swift; sourceTree = "<group>"; };
 		E7F116D32A14C0E400744662 /* Inertial Square.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Inertial Square.swift"; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				E7B4A2452A125F09008653D0 /* Quest 5. Compact Controller */,
 				E7F116D22A14C0C100744662 /* Quest 6. Inertial Square */,
 				E7BC1C012A1A38230044A021 /* Quest 7.  Stretching Picture */,
+				E7258B202A1F9E990019B29D /* Quest 8. Native Avatar */,
+				E7258B1D2A1F9E280019B29D /* Quest 9. App Store Collection */,
 				E714439E2A0A3651002F6182 /* AppDelegate.swift */,
 				E71443A02A0A3651002F6182 /* SceneDelegate.swift */,
 				E71443A42A0A3651002F6182 /* Main.storyboard */,
@@ -107,6 +113,22 @@
 				E71443B72A0BE35B002F6182 /* GradientAndShadow.swift */,
 			);
 			path = "Quest 1. Gradient And Shadow";
+			sourceTree = "<group>";
+		};
+		E7258B1D2A1F9E280019B29D /* Quest 9. App Store Collection */ = {
+			isa = PBXGroup;
+			children = (
+				E7258B1B2A1F9E220019B29D /* App Store Collection.swift */,
+			);
+			path = "Quest 9. App Store Collection";
+			sourceTree = "<group>";
+		};
+		E7258B202A1F9E990019B29D /* Quest 8. Native Avatar */ = {
+			isa = PBXGroup;
+			children = (
+				E7258B1E2A1F9E900019B29D /* Native Avatar.swift */,
+			);
+			path = "Quest 8. Native Avatar";
 			sourceTree = "<group>";
 		};
 		E7B4A2202A114BAB008653D0 /* Quest 4. Mixer Table */ = {
@@ -219,7 +241,9 @@
 				E7B4A2222A114C66008653D0 /* CompactController.swift in Sources */,
 				E7BC1C002A1A38200044A021 /* StretchingPicture.swift in Sources */,
 				E7F116D42A14C0E400744662 /* Inertial Square.swift in Sources */,
+				E7258B1C2A1F9E220019B29D /* App Store Collection.swift in Sources */,
 				E714439F2A0A3651002F6182 /* AppDelegate.swift in Sources */,
+				E7258B1F2A1F9E900019B29D /* Native Avatar.swift in Sources */,
 				E71443A12A0A3651002F6182 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
